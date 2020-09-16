@@ -1,0 +1,414 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: relative; top: 0; left: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Spartan', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+}
+main{
+    position: relative; top: 0; left: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+.top-bg{
+    position: absolute; top: 0; left: 0;
+}
+.bottom-bg{
+    position: absolute; bottom: 0; right: 0;
+}
+/* container */
+.container{
+    padding: 8.2rem 11% 0 11.5%;
+    width: 100%;
+    height: auto;
+}
+/* products */
+.products{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.products_header{
+    width: 41%;
+}
+.products_header h1{
+    width: 100%;
+    font-size: 2.82rem;
+    line-height: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: hsl(300, 43%, 22%);
+}
+.products_header p{
+    width: 100%;
+    font-size: .9rem;
+    line-height: 1.6rem;
+    color: hsl(303, 10%, 53%);
+}
+/* rateds */
+.products_rated{
+    width: 49%;
+    margin-top: 1rem;
+    z-index: 2000;
+}
+.rated{
+    margin-bottom: 1.3rem;
+    padding: 0 16% 0 5.9%;
+    width: 81%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+}
+.rated:nth-child(2){
+    padding: 0 11% 0 5.9%;
+    margin-left: 9%;
+}
+.rated:nth-child(3){
+    padding: 0 15% 0 5.9%;
+    margin-left: 17%;
+}
+.stars img{
+    margin-right: .2rem;
+}
+.rated_header h6{
+    font-size: .8rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+/*  comments */
+.comments{
+    /* background-color: red; */
+    margin-top: 4.2rem;
+    width: 99.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.comment_box{
+    width: 31.5%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 1.8rem 1.8rem 2.3rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: hsl(300, 43%, 22%);
+}
+.comment_box:nth-child(2){
+    position: relative; top: 1rem;
+}
+.comment_box:nth-child(3){
+    position: relative; top: 2rem;
+}
+.person{
+    margin-top: .7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.person img{
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 100px;
+}
+.name{
+    margin-left: 1.3rem;
+    color: white;
+    font-size: .8rem;
+}
+.comment{
+    margin-top: 1.6rem;
+}
+.comment p{
+    width: 100%;
+    line-height: 1.4rem;
+    font-size: .81rem;
+    color: white;
+}
+@media only screen and (max-width: 1300px){
+    .container{
+        padding: 7rem 5% 0 5%;
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1150px){
+    .products_header{
+        width: 45%;
+    }
+    .products_rated{
+        width: 55%;
+    }
+    .comments{
+        width: 100%;
+    }
+    .comment_box{
+        width: 32%;
+        padding: 1.5rem 1.2rem 1.8rem 1.2rem;
+    }
+    .comment{
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .rated{
+        margin-left: 10%;
+        width: 90%;
+        padding: 0 5% 0 3%;
+    }
+    .rated:nth-child(2){
+        padding: 0 5% 0 3%;
+        margin-left: 10%;
+    }
+    .rated:nth-child(3){
+        padding: 0 5% 0 3%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 850px){
+        /* container */
+    .container{
+        padding: 4rem 5% 0 5%;
+        width: 100%;
+        height: auto;
+    }
+    /* products */
+    .products{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .products_header{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .products_header h1{
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        font-size: 3.2rem;
+    }
+    .products_header p{
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        font-size: 1.2rem;
+    }
+    /* rateds */
+    .products_rated{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .rated{
+        padding: 0 6% 0 6%;
+        margin-left: 0%;
+    }
+    .rated:nth-child(2){
+        padding: 0 6% 0 6%;
+        margin-left: 0%;
+    }
+    .rated:nth-child(3){
+        padding: 0 6% 0 6%;
+        margin-left: 0%;
+    }
+    .rated_header h6{
+        font-size: .9rem;
+    }
+
+
+
+    .comments{
+        margin-top: 4.2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .comment_box{
+        width: 65%;
+        padding: 1.8rem 1.8rem 2.3rem 1.8rem;
+        margin-bottom: 4rem;
+    }
+    .comment_box:nth-child(2){
+        position: relative; top: 0rem;
+    }
+    .comment_box:nth-child(3){
+        position: relative; top: 0rem;
+    }
+    .person{
+        margin-top: .3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .person img{
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 100px;
+    }
+    .name{
+        margin-left: 1.3rem;
+        color: white;
+        font-size: 1rem;
+    }
+    .comment{
+        margin-top: 1.6rem;
+    }
+    .comment p{
+        width: 100%;
+        line-height: 1.4rem;
+        font-size: 1.1rem;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .products_header h1{
+        width: 100%;
+        margin: 0 0%;
+        font-size: 2.8rem;
+    }
+    .products_header p{
+        width: 100%;
+        margin: 0 0%;
+        font-size: 1.2rem;
+    }
+    /* rateds */
+    .products_rated{
+        width: 100%;
+    }
+    .rated_header h6{
+        font-size: .85rem;
+    }
+    .comment_box{
+        width: 75%;
+    }
+    .person img{
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 100px;
+    }
+    .name{
+        margin-left: 1.3rem;
+        color: white;
+        font-size: 1rem;
+    }
+    .comment{
+        margin-top: 1.6rem;
+    }
+    .comment p{
+        width: 100%;
+        line-height: 1.4rem;
+        font-size: 1.1rem;
+        color: white;
+    }
+}
+@media only screen and (max-width: 500px){
+    .products_header h1{
+        width: 100%;
+        margin: 0 0 1rem 0;
+        font-size: 3rem;
+    }
+    .products_header p{
+        width: 100%;
+        margin: 0 0%;
+        font-size: 1.2rem;
+    }
+    /* rateds */
+    .products_rated{
+        width: 100%;
+    }
+    .rated_header h6{
+        font-size: 1rem;
+        margin-top: .4rem;
+    }
+    .rated{
+        padding: 0 3% 0 2%;
+        height: 4.5rem;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rated:nth-child(2){
+        padding: 0 3% 0 2%;
+        margin-left: 0%;
+    }
+    .rated:nth-child(3){
+        padding: 0 3% 0 2%;
+        margin-left: 0%;
+    }
+    .comment_box{
+        width: 90%;
+    }
+    .name{
+        font-size: .9rem;
+    }
+    .comment p{
+        font-size: 1rem;
+    }
+    .stars img{
+        width: 1.3rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .products_header h1{
+        font-size: 2.5rem;
+    }
+    .products_header p{
+        font-size: 1rem;
+    }
+    .rated_header h6{
+        font-size: .9rem;
+    }
+    .comment_box{
+        width: 100%;
+    }
+    .name{
+        font-size: .95rem;
+    }
+    .stars img{
+        width: 1rem;
+    }
+    .top-bg{
+        position: absolute; top: 0; left: 0;
+        width: 100%;
+    }
+    .bottom-bg{
+        position: absolute; bottom: 0; right: 0;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 300px){
+    .products_header h1{
+        font-size: 2rem;
+    }
+    .products_header p{
+        font-size: 1rem;
+    }
+    .rated_header h6{
+        font-size: .8rem;
+    }
+    .name{
+        font-size: 1rem;
+    }
+}
